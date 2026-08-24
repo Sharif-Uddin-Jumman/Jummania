@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <title>Sharif Uddin Jumman · Software Developer & Founder of Jummania</title>
+
+    <meta content="width=device-width, initial-scale=1"
+          name="viewport"/>
+
+    <meta content="Software developer specializing in Java, Kotlin, Jetpack Compose, PHP, MySQL and REST APIs. Founder of Jummania, Mamomi Soft Heart and creator of published applications on Google Play."
+          name="description"/>
+
+    <meta content="Sharif Uddin Jumman, Software Developer, Android Developer, Backend Developer, Java Developer, Kotlin Developer, PHP Developer, MySQL, Jummania"
+          name="keywords"/>
+
+    <meta content="Sharif Uddin Jumman"
+          name="author"/>
+
+    <meta content="index,follow"
+          name="robots"/>
+
+    <link href="https://jummania.com"
+          rel="canonical"/>
+
+    <meta content="#0f172a"
+          name="theme-color"/>
+
+
+    <!-- Open Graph -->
+    <meta content="website"
+          property="og:type"/>
+
+    <meta content="https://jummania.com"
+          property="og:url"/>
+
+    <meta content="Jummania"
+          property="og:site_name"/>
+
+    <meta content="Sharif Uddin Jumman · Software Developer & Founder of Jummania"
+          property="og:title"/>
+
+    <meta content="Software developer specializing in Java, Kotlin, Jetpack Compose, PHP, MySQL and REST APIs. Founder of Jummania, Mamomi Soft Heart and creator of published applications on Google Play."
+          property="og:description"/>
+
+    <meta content="https://jummania.com/App/BanglaNatokSamahar/Images/Profile%20Photo.jpg"
+          property="og:image"/>
+
+    <meta content="https://jummania.com/App/BanglaNatokSamahar/Images/Profile%20Photo.jpg"
+          property="og:image:secure_url"/>
+
+    <meta content="image/jpeg"
+          property="og:image:type"/>
+
+    <meta content="Sharif Uddin Jumman - Software Developer and Founder of Jummania"
+          property="og:image:alt"/>
+
+    <meta content="en_US"
+          property="og:locale"/>
+
+
+    <!-- Twitter / X -->
+    <meta content="summary_large_image"
+          name="twitter:card"/>
+
+    <meta content="https://jummania.com"
+          name="twitter:url"/>
+
+    <meta content="Sharif Uddin Jumman · Software Developer & Founder of Jummania"
+          name="twitter:title"/>
+
+    <meta content="Software developer specializing in Java, Kotlin, Jetpack Compose, PHP, MySQL and REST APIs. Founder of Jummania, Mamomi Soft Heart and creator of published applications on Google Play."
+          name="twitter:description"/>
+
+    <meta content="https://jummania.com/App/BanglaNatokSamahar/Images/Profile%20Photo.jpg"
+          name="twitter:image"/>
+
+    <meta content="Sharif Uddin Jumman - Software Developer and Founder of Jummania"
+          name="twitter:image:alt"/>
+
+    <!-- Favicon -->
+    <link href="https://jummania.com/favicon.ico"
+          rel="icon"
+          sizes="any"/>
+
+    <link href="https://jummania.com/App/BanglaNatokSamahar/Images/Profile%20Photo.jpg"
+          rel="apple-touch-icon"/>
+
+
+    <title>Sharif Uddin Jumman · Developer</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 32px 18px;
+            background: radial-gradient(circle at 10% 10%, rgba(30, 65, 117, 0.06), transparent 30%),
+            radial-gradient(circle at 90% 90%, rgba(30, 65, 117, 0.05), transparent 30%),
+            #f5f7fb;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #172033;
+        }
+
+        .profile {
+            width: 100%;
+            max-width: 1120px;
+            background: #ffffff;
+            border: 1px solid rgba(230, 235, 242, 0.9);
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(22, 42, 74, 0.08), 0 4px 12px rgba(22, 42, 74, 0.04);
+            overflow: hidden;
+            transition: box-shadow 0.25s ease;
+        }
+
+        .profile:hover {
+            box-shadow: 0 28px 60px rgba(22, 42, 74, 0.12), 0 6px 16px rgba(22, 42, 74, 0.06);
+        }
+
+        .profile-inner {
+            padding: 52px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .photo-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo-wrapper::before {
+            content: "";
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            background: #edf3fb;
+            z-index: 0;
+        }
+
+        .profile-pic {
+            position: relative;
+            z-index: 1;
+            width: 290px;
+            height: 290px;
+            object-fit: cover;
+            border-radius: 28px;
+            border: 8px solid #ffffff;
+            box-shadow: 0 20px 40px rgba(30, 65, 117, 0.14), 0 4px 10px rgba(30, 65, 117, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #f0f4fa;
+        }
+
+        .profile-pic:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 26px 50px rgba(30, 65, 117, 0.18), 0 6px 14px rgba(30, 65, 117, 0.08);
+        }
+
+        .intro {
+            min-width: 0;
+        }
+
+        .name {
+            color: #101b2d;
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: -1.8px;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            color: #1e4175;
+            font-size: 21px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .description {
+            max-width: 650px;
+            color: #5d6878;
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .about {
+            margin-top: 28px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 18px;
+        }
+
+        .about-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 13px 15px;
+            background: #f8faff;
+            border: 1px solid #edf1f6;
+            border-radius: 12px;
+            color: #5d6878;
+            font-size: 14px;
+            line-height: 1.55;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .about-item:hover {
+            background: #ffffff;
+            border-color: #dce4ef;
+        }
+
+        .about-item::before {
+            content: "";
+            flex: 0 0 auto;
+            width: 7px;
+            height: 7px;
+            margin-top: 7px;
+            margin-right: 10px;
+            background: #1e4175;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .about-item strong {
+            color: #172033;
+            font-weight: 600;
+        }
+
+        .about-item a {
+            color: #1e4175;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted rgba(30, 65, 117, 0.25);
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .about-item a:hover {
+            border-bottom-color: #1e4175;
+            color: #0f2b4f;
+        }
+
+        .section-divider {
+            height: 1px;
+            margin: 48px 0 34px;
+            background: #e6ebf2;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .app-item {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            background: #f8faff;
+            border: 1px solid #edf1f6;
+            border-radius: 14px;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            color: #172033;
+        }
+
+        .app-item:hover {
+            transform: translateY(-2px);
+            background: #ffffff;
+            border-color: #d6e0ef;
+            box-shadow: 0 8px 20px rgba(30, 65, 117, 0.07);
+        }
+
+        .app-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            margin-right: 14px;
+            flex-shrink: 0;
+            object-fit: cover;
+            background: #edf3fb;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .app-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #172033;
+            display: block;
+        }
+
+        .app-desc {
+            font-size: 12px;
+            color: #8a95a5;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            color: #172033;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .section-subtitle {
+            color: #8a95a5;
+            font-size: 14px;
+        }
+
+        .view-all {
+            color: #1e4175;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color 0.2s;
+        }
+
+        .view-all:hover {
+            border-bottom-color: #1e4175;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+
+        .contact-title {
+            color: #172033;
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .contact-subtitle {
+            margin-top: 5px;
+            color: #8a95a5;
+            font-size: 14px;
+        }
+
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .contact-option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-option a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 18px;
+            color: #172033;
+            text-decoration: none;
+            background: #ffffff;
+            border: 1px solid #e6ebf2;
+            border-radius: 14px;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .contact-option a:hover {
+            transform: translateY(-2px);
+            background: #f8faff;
+            border-color: #d6e0ef;
+            box-shadow: 0 8px 20px rgba(30, 65, 117, 0.07);
+        }
+
+        .contact-icon {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+            border-radius: 9px;
+            flex-shrink: 0;
+        }
+
+        .contact-label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .secondary-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+            margin-top: 25px;
+            padding-top: 22px;
+            border-top: 1px solid #edf1f6;
+        }
+
+        .secondary-links a {
+            color: #1e4175;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s ease, transform 0.2s ease;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 2px;
+        }
+
+        .secondary-links a:hover {
+            color: #0f2b4f;
+            border-bottom-color: #1e4175;
+            transform: translateY(-1px);
+        }
+
+        .secondary-links span {
+            color: #c0c8d4;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #8a95a5;
+            font-size: 12px;
+            letter-spacing: 0;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                padding: 20px 14px;
+            }
+
+            .profile-inner {
+                padding: 38px 28px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 34px;
+                text-align: center;
+            }
+
+            .intro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description {
+                max-width: 680px;
+            }
+
+            .about {
+                width: 100%;
+                text-align: left;
+            }
+
+            .photo-wrapper::before {
+                width: 240px;
+                height: 240px;
+            }
+
+            .profile-pic {
+                width: 260px;
+                height: 260px;
+            }
+
+            .contact-options {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            .apps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .about {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .about-item {
+                font-size: 13px;
+                padding: 12px 14px;
+            }
+
+            .contact-options {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .contact-option a {
+                justify-content: flex-start;
+                padding: 13px 16px;
+            }
+
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .profile {
+                border-radius: 22px;
+            }
+
+            .profile-inner {
+                padding: 30px 18px;
+            }
+
+            .photo-wrapper::before {
+                width: 210px;
+                height: 210px;
+            }
+
+            .profile-pic {
+                width: 225px;
+                height: 225px;
+                border-radius: 24px;
+                border-width: 6px;
+            }
+
+            .name {
+                font-size: 34px;
+                letter-spacing: -1.2px;
+            }
+
+            .job-title {
+                font-size: 18px;
+                margin-bottom: 18px;
+            }
+
+            .description {
+                font-size: 14px;
+                line-height: 1.7;
+            }
+
+            .about {
+                margin-top: 22px;
+            }
+
+            .section-divider {
+                margin: 34px 0 26px;
+            }
+
+            .secondary-links {
+                gap: 8px 14px;
+                font-size: 13px;
+            }
+
+            .footer {
+                margin-top: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main class="profile">
+    <div class="profile-inner">
+        <section class="hero">
+            <div class="photo-wrapper">
+                <img alt="Sharif Uddin Jumman"
+                     class="profile-pic" src="https://jummania.com/App/BanglaNatokSamahar/Images/Profile%20Photo.jpg"/>
+            </div>
+            <div class="intro">
+                <h1 class="name">Sharif Uddin Jumman</h1>
+                <div class="job-title">Software &amp; Backend Developer</div>
+                <p class="description">I am passionate about creating innovative and user-friendly software that solve
+                    real-world problems. Throughout my career, I have successfully completed many projects, working with
+                    clients from various industries.</p>
+                <div class="about">
+                    <div class="about-item">
+              <span>
+                <strong>Founder</strong> of <a href="https://jummania.com" target="_blank">Jummania</a> and <a
+                      href="https://play.google.com/store/apps/dev?id=5030358914195610741" target="_blank">Mamomi Soft Heart</a>.
+              </span>
+                    </div>
+                    <div class="about-item">
+                        <span><strong>Software</strong> development with Java, Kotlin and Jetpack Compose.</span>
+                    </div>
+                    <div class="about-item">
+                        <span><strong>Backend</strong> development with PHP, MySQL and REST APIs.</span>
+                    </div>
+                    <div class="about-item">
+                        <span>Focused on <strong>performance, caching</strong> and optimization.</span>
+                    </div>
+                    <div class="about-item">
+                        <span>Experience with <strong>serialization</strong> and efficient data processing.</span>
+                    </div>
+                    <div class="about-item">
+                        <span><strong>Published</strong> multiple applications on <a
+                                href="https://play.google.com/store/apps/dev?id=5030358914195610741" target="_blank">Google Play</a>.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="apps">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Featured Apps</h2>
+                    <p class="section-subtitle">My most popular applications on Google Play</p>
+                </div>
+                <a class="view-all" href="https://play.google.com/store/apps/dev?id=5030358914195610741"
+                   target="_blank">View All →</a>
+            </div>
+            <div class="apps-grid">
+                <a class="app-item" href="https://play.google.com/store/apps/details?id=com.mamomi.banglanatoksomahar">
+                    <img alt="অভ্র"
+                         class="app-icon"
+                         src="https://play-lh.googleusercontent.com/4tbPShZRu1u0YYU-NJNnE60muDmTstMgz402R4ImGos7hhhhDAMYnqh8hK0_1zHl1gZAUaKx5f4KTnP-FTNIdQ=w240-h480-rw"/>
+                    <div class="app-info">
+                        <span class="app-name">বাংলা নাটক সমাহার : Bd Natok</span>
+                        <span class="app-desc">Bengali drama collection</span>
+                    </div>
+                </a>
+                <a class="app-item" href="https://play.google.com/store/apps/details?id=com.mamomi.banglakobitasomahar">
+                    <img alt="বাংলা কবিতা সমাহার"
+                         class="app-icon"
+                         src="https://play-lh.googleusercontent.com/kG6ZXbS1tbF0zxQDP5USxnfnBYB_c1PIyUVBj_do-FV-VdnhJ_-0GWnwr_5qFHtnqzjYKXTSNVitn45-fzD9hQ8=w240-h480-rw"/>
+                    <div class="app-info">
+                        <span class="app-name">বাংলা কবিতা সমাহার : Bd Kobita</span>
+                        <span class="app-desc">Bengali poetry collection</span>
+                    </div>
+                </a>
+                <a class="app-item" href="https://play.google.com/store/apps/details?id=com.mamomi.banglagolposomahar">
+                    <img alt="বাংলা নাটক সমাহার"
+                         class="app-icon"
+                         src="https://play-lh.googleusercontent.com/dfVBddT73TqFOB2vVWCQCH1w4jnGb1y-PNOtvrDmLlO7Bn-QRCUIsGXQner-wg9wmbYKjhIr4IJKa804PBq56g=w240-h480-rw"/>
+                    <div class="app-info">
+                        <span class="app-name">অভ্র: বাংলা সাহিত্য সমাহার</span>
+                        <span class="app-desc">Bengali literature collection</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="apps">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Popular Repositories</h2>
+                    <p class="section-subtitle">Open source projects on GitHub</p>
+                </div>
+                <a class="view-all" href="https://github.com/jummania"
+                   target="_blank">View All →</a>
+            </div>
+            <div class="apps-grid">
+                <a class="app-item" href="https://github.com/jummania/Analogue-Watch">
+                    <div class="app-info">
+                        <span class="app-name">Analogue Watch</span>
+                        <span class="app-desc">Customizable Android analog clock library</span>
+                    </div>
+                </a>
+                <a class="app-item" href="https://github.com/jummania/Jummania-Slider">
+                    <div class="app-info">
+                        <span class="app-name">Jummania Slider</span>
+                        <span class="app-desc">Jummania View Slider for Android!</span>
+                    </div>
+                </a>
+                <a class="app-item" href="https://github.com/jummania/DataManager">
+                    <div class="app-info">
+                        <span class="app-name">DataManager</span>
+                        <span class="app-desc">Java data library with JSON serialization and file persistence</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <div class="section-divider"></div>
+
+        <section class="contact">
+            <div class="contact-header">
+                <h2 class="contact-title">Get in touch</h2>
+                <p class="contact-subtitle">Feel free to reach out through any of these platforms.</p>
+            </div>
+
+            <div class="contact-options">
+                <div class="contact-option">
+                    <a href="https://www.facebook.com/61551340622296" rel="noopener" target="_blank">
+                        <img alt="Facebook"
+                             class="contact-icon"
+                             src="https://play-lh.googleusercontent.com/12KEJDhgk6oyE1VgmfCuFzFrQripZ_endElbvEhU1rZawQgV3RI-v3II8fDslI1sdC_WKBkmtxS3jxuIihk33Q=w240-h480-rw"/>
+                        <span class="contact-label">Facebook</span>
+                    </a>
+                </div>
+                <div class="contact-option">
+                    <a href="mailto:arsharifuddinjumman04@gmail.com,sharifuddinjumman@gmail.com?subject=Getting%20in%20touch%20with%20the%20developer%20of%20the%20app&body=Hi%2C%20I'm%20a%20user%20of%20your%20app%20and%20I%20would%20like%20to%20reach%20out%20to%20you.%20Can%20we%20talk%3F">
+                        <img alt="Gmail"
+                             class="contact-icon"
+                             src="https://play-lh.googleusercontent.com/c6KD_8-GvnGRJA4lRQ4y5YnUa3-LOeYAS7ubw1jWyB9bmr6Kj6zzRvh2A5WBB-Vd3e6zhElmhDv07fCJx2Fc=w240-h480-rw"/>
+                        <span class="contact-label">Email</span>
+                    </a>
+                </div>
+                <div class="contact-option">
+                    <a href="https://api.whatsapp.com/send?phone=+8801746801677&text=Hi%2C%20I'm%20a%20user%20of%20your%20app%20and%20I%20would%20like%20to%20reach%20out%20to%20you.%20Can%20we%20talk%3F"
+                       rel="noopener" target="_blank">
+                        <img alt="WhatsApp"
+                             class="contact-icon"
+                             src="https://play-lh.googleusercontent.com/Gqxk4T0uZsDwFp07DE-508hkyvcNmgFuRwPiwTEfF7D7OzGv1FdHDzEyMxNsSBZLOJlGpe3ULvVM2RgrRAlBqA=w240-h480-rw"/>
+                        <span class="contact-label">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="secondary-links">
+                <a href="https://github.com/jummania" rel="noopener" target="_blank">GitHub</a>
+                <span>•</span>
+                <a href="https://stackoverflow.com/users/19610655/ar-sharif-uddin-jumman" rel="noopener"
+                   target="_blank">Stack Overflow</a>
+                <span>•</span>
+                <a href="https://play.google.com/store/apps/dev?id=5030358914195610741" rel="noopener" target="_blank">Google
+                    Play</a>
+                <span>•</span>
+                <a href="https://avro.jummania.com" rel="noopener" target="_blank">Avro</a>
+            </div>
+
+            <div class="footer">© Sharif Uddin Jumman (Jummania)</div>
+        </section>
+    </div>
+</main>
+</body>
+</html>
